@@ -1,0 +1,27 @@
+<% include ./partials/header.ejs %>
+<% include ./partials/side-navigation.ejs %>
+
+<section>
+    <%
+    console.log("in catalog view")
+    %>
+    <%
+        for(var j=0; j< data.length;j++){
+    %>
+    <h2>
+        <%= data[j].categoryName %>
+
+    </h2>
+    <%
+        for(var i=0; i< data[j].items.length;i++){
+    %>
+    <p>
+        <a href="/categories/item/ <%= data[j].items[i].itemCode %>">
+            <%= data[j].items[i].name %>
+        </a>
+    </p>
+    <% } %>
+    <% } %>
+</section>
+
+<% include ./partials/footer.ejs %>
