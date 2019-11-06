@@ -1,5 +1,5 @@
 # Assignment3 - Session Tracking 
-Rubric
+Rubric: 
 User class - object class that holds information related to a user. Include at least: UserID, First Name, Last Name, and Email.
 UserItem class - object class that contains fields for: Item, Rating, and MadeIt.
 UserProfile Class - object class that ties a User to a list of Items. Must contain a UserID or User, a List of UserItems.
